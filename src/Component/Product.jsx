@@ -136,7 +136,7 @@ function Product() {
                 <p>{product.description}</p>
                 <p>
                   <span>
-                    <b>Rs.{product.price}</b>
+                    <b>$.{product.price}</b>
                   </span>
                 </p>
                 <div className="editbtn">
