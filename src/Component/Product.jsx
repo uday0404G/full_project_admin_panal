@@ -8,7 +8,7 @@ function Product() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null); // State for error handling
-  const productCollection = collection(db, 'productdatabase');
+  const productCollection = collection(db, 'Glassesdatabase');
   const [filterData, setFilter] = useState({
     Perfume: false,
     Cloth: false,
