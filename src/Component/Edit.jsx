@@ -49,7 +49,7 @@ function EditProduct() {
         await addDoc(productCollection, productData);
         alert('Product added successfully');
       } else {
-        const docRef = doc(db, 'productdatabase', id);
+        const docRef = doc(db, 'Glassesdatabase', id);
         await updateDoc(docRef, productData);
         alert('Product updated successfully');
       }
