@@ -10,7 +10,7 @@ function Product() {
   const [error, setError] = useState(null);
   const productCollection = collection(db, 'Glassesdatabase');
   const [filterData, setFilter] = useState({
-    Perfume: false,
+    SUNGLASSES: false,
     Cloth: false,
   });
   const [sort, setSort] = useState('');
