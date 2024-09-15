@@ -98,11 +98,15 @@ function EditProduct() {
             onChange={(e) => setCategory(e.target.value)}
             required
           >
-            <option value="" disabled>
+           <option value="" disabled>
               Select Category
             </option>
-            <option value="Perfume">Perfume</option>
-            <option value="Cloth">Cloth</option>
+            <option value="EYEGLASSES">EYEGLASSES</option>
+            <option value="SUNGLASSES">SUNGLASSES</option>
+            <option value="LENSES">LENSES</option>
+            <option value="COLLECTION">COLLECTION</option>
+            <option value="CONTACTS">CONTACTS</option>
+
           </select>
           <button type="submit">{id === 'new' ? 'Add Product' : 'Save Changes'}</button>
         </form>
