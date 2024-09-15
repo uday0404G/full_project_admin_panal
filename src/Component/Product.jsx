@@ -7,7 +7,7 @@ import { db } from '../Firebase/firebase';
 function Product() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null); // State for error handling
+  const [error, setError] = useState(null);
   const productCollection = collection(db, 'Glassesdatabase');
   const [filterData, setFilter] = useState({
     Perfume: false,
@@ -40,7 +40,7 @@ function Product() {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
-        await deleteDoc(doc(db, 'productdatabase', id));
+        await deleteDoc(doc(db, 'Glassesdatabase', id));
         alert('Product deleted successfully');
         getProducts();
       } catch (error) {

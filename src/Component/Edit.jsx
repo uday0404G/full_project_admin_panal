@@ -11,13 +11,13 @@ function EditProduct() {
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
   const [category, setCategory] = useState(''); // State for category
-  const productCollection = collection(db, 'productdatabase');
+  const productCollection = collection(db, 'Glassesdatabase');
 
   useEffect(() => {
     if (id !== 'new') {
       const fetchProduct = async () => {
         try {
-          const docRef = doc(db, 'productdatabase', id);
+          const docRef = doc(db, 'Glassesdatabase', id);
           const docSnap = await getDoc(docRef);
           if (docSnap.exists()) {
             const product = docSnap.data();
