@@ -73,11 +73,11 @@ const AddProduct = () => {
             <option value="" disabled>
               Select Category
             </option>
-            <option value="Perfume">EYEGLASSES</option>
-            <option value="Cloth">SUNGLASSES</option>
-            <option value="Cloth">LENSES</option>
-            <option value="Cloth">COLLECTION</option>
-            <option value="Cloth">CONTACTS</option>
+            <option value="EYEGLASSES">EYEGLASSES</option>
+            <option value="SUNGLASSES">SUNGLASSES</option>
+            <option value="LENSES">LENSES</option>
+            <option value="COLLECTION">COLLECTION</option>
+            <option value="CONTACTS">CONTACTS</option>
 
           </select>
           <button type="submit">Add Product</button>
