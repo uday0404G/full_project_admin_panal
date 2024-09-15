@@ -8,9 +8,9 @@ const AddProduct = () => {
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
-  const [category, setCategory] = useState(''); // State for category
+  const [category, setCategory] = useState(''); 
   const navigate = useNavigate();
-  const productCollection = collection(db, 'productdatabase');
+  const productCollection = collection(db, 'Glassesdatabase');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ const AddProduct = () => {
             placeholder="Enter Product Title"
             required
           />
-          <input
+          <textarea
             type="text"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -73,8 +73,12 @@ const AddProduct = () => {
             <option value="" disabled>
               Select Category
             </option>
-            <option value="Perfume">Perfume</option>
-            <option value="Cloth">Cloth</option>
+            <option value="Perfume">EYEGLASSES</option>
+            <option value="Cloth">SUNGLASSES</option>
+            <option value="Cloth">LENSES</option>
+            <option value="Cloth">COLLECTION</option>
+            <option value="Cloth">CONTACTS</option>
+
           </select>
           <button type="submit">Add Product</button>
         </form>
